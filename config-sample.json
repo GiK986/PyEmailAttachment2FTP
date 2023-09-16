@@ -1,0 +1,36 @@
+{
+ "email": {
+   "host": "imap.example.com",
+   "port": 993,
+   "username": "your_email@example.com",
+   "password": "your_email_password",
+   "ssl": true,
+   "folder": "INBOX",
+   "filters": [
+     {
+       "subject": "Important Report",
+       "from": "report@example.com",
+       "unseen": true
+     }
+   ]
+ },
+ "ftp": {
+   "host": "ftp.example.com",
+   "port": 21,
+   "username": "your_ftp_username",
+   "password": "your_ftp_password",
+   "ssl": false,
+   "passive": true,
+   "timeout": 30,
+   "retries": 3,
+   "retryDelay": 5
+ },
+ "preferences": {
+   "deleteEmail": false,
+   "deleteEmailDelay": 0,
+   "deleteEmailDelayUnit": "minutes",
+   "moveEmailToFolder": false,
+   "moveEmailToFolderName": "archived",
+   "ftpUploadFolder": "/path/to/ftp/folder"
+ }
+}
